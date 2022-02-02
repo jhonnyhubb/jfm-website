@@ -1,0 +1,36 @@
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    transition: all ease 0.3s;
+    /*background-color:rgb(31, 31, 31);#282C34*/
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    margin: 0;
+}
+
+li{
+ display: inline-block;
+ padding-top: 18px;
+}
+
+li.about{
+    float: right;
+    margin-right: 4%;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.activeColor{
+    background-color: rgb(31, 31, 31);
+}

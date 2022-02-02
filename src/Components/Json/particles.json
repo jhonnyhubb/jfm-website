@@ -9,23 +9,23 @@
     "events": {
       "onClick": {
         "enable": true,
-        "mode": "push"
+        "mode": "bubble"
       },
       "onHover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "resize": true
     },
     "modes": {
       "bubble": {
-        "distance": 400,
-        "duration": 2,
+        "distance": 150,
+        "duration": 0.5,
         "opacity": 0.8,
-        "size": 40
+        "size": 5
       },
       "push": {
-        "quantity": 4
+        "quantity": 0
       },
       "repulse": {
         "distance": 200,
@@ -35,24 +35,24 @@
   },
   "particles": {
     "color": {
-      "value": "#ffffff"
+      "value": "#60D7F7"
     },
     "links": {
-      "color": "#ffffff",
+      "color": "#60D7F7",
       "distance": 150,
       "enable": true,
       "opacity": 0.5,
       "width": 1
     },
     "collisions": {
-      "enable": true
+      "enable": false
     },
     "move": {
       "direction": "none",
       "enable": true,
       "outMode": "bounce",
       "random": false,
-      "speed": 6,
+      "speed": 2,
       "straight": false
     },
     "number": {
