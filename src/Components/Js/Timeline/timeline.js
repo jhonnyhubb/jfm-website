@@ -1,41 +1,43 @@
-import React from "react";
-import { Chrono } from "react-chrono";
+import * as React from 'react';
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import Typography from '@mui/material/Typography';
+//icons
+import { DiJavascript } from 'react-icons/di';
 
-const Home = () => {
-    const items = [{
-      title: "dez 2021",
-      cardTitle: "",
-      url: "https://github.com/jhonnyhubb/Counter",
-      cardSubtitle:"Counter",
-      cardDetailedText: "start programming",
-      media: {
-        type: "IMAGE",
-        source: {
-          url: "https://github.com/jhonnyhubb/Counter/blob/main/public/Gif/Counter.gif"
-        }
-      }
-    }, {
-        title: "dez 2021",
-        cardTitle: "",
-        url: "https://github.com/jhonnyhubb/Counter",
-        cardSubtitle:"Counter",
-        cardDetailedText: "start programming",
-        media: {
-          type: "IMAGE",
-          source: {
-            url: "https://github.com/jhonnyhubb/Counter/blob/main/public/Gif/Counter.gif"
-          }
-        }
-      }];
-
-    return (
-        <div style={{ margin: "auto", width: "1000px", height: "1000px" }}>
-            <Chrono
-            items={items}
-            mode="VERTICAL_ALTERNATING"
-            />
-        </div>
-    )
-  }
-
-  export default Home;
+export default function CustomizedTimeline() {
+  return (
+    <Timeline position="alternate">
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+          dez 2021
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'warning.main' }} />
+          <TimelineDot color="warning">
+          <DiJavascript size={40} />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            How it all started...
+          </Typography>
+          <Typography>
+            At this time, I started to have some interest in coding. In Dez 2021, I joined the DIO._ community, started learning JavaScript and created my first page web.
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
+  );
+}
