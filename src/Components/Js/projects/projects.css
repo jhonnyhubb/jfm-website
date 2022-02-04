@@ -1,12 +1,14 @@
 .card{
-    margin-left:20px;
-    margin-right:20px;
-    padding-left:20px;
-    padding-right:20px;
+    margin-left:30px;
+    margin-right:30px;
+    padding-left:30px;
+    padding-right:30px;
 }
 
 .card-img-top{
-    padding-top:20px;
+    padding-top:30px;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding-top: 16px;  
 }
 
 div div div a{
@@ -21,9 +23,6 @@ div div div a:active{
     color: #000;
 }
 
-.project2{
-    opacity: 0;
-}
 .project3{
     opacity: 0;
 }

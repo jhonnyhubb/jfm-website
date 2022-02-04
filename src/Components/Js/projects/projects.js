@@ -3,6 +3,7 @@ import * as React from 'react';
 import './projects.css'
 
 const dogKennel = require('../../../Img/dogKennel.jpg');
+const pokedex = require('../../../Img/pokedex.png')
 
 
 //image inside the className card
@@ -17,11 +18,12 @@ export default function CustomizedTimeline({action}) {
                     <a href="https://jhonnyhubb.github.io/DogKennel/" target="_blank" rel="noreferrer" className="card-text text-uppercase">visit website<small className="text-muted"></small></a>
                 </div>
             </div>
-            <div className="card project2">
+            <div className="card">
+                <img className="card-img-top" src={pokedex} alt="pokedex"/>
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <a href="https://jhonnyhubb.github.io/DogKennel/" target="_blank" rel="noreferrer" className="card-text text-uppercase">visit website<small className="text-muted"></small></a>
+                    <h5 className="card-title">Pokedex</h5>
+                    <p className="card-text">In this project i connect the FrontEnd with a external API.</p>
+                    <a href="https://jfm-pokedex.netlify.app" target="_blank" rel="noreferrer" className="card-text text-uppercase">visit website<small className="text-muted"></small></a>
                 </div>
             </div>
             <div className="card project3">
