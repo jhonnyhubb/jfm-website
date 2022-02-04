@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
 import Header from '../../Js/header/header.jsx';
-import Home from '../../Js/Timeline/timeline';
+import TimelineScroll from '../../Js/scroll/timeline';
+import Projects from '../../Js/projects/projects'
+
+
 
 function App() {
 
@@ -21,8 +24,9 @@ function App() {
             </div>
             <main className="portfolio">
                 <h2>My projects</h2>
+                    <Projects />
                 <h2>Timeline</h2>
-                    <Home />
+                    <TimelineScroll />
             </main> 
             <footer>
                 <div>

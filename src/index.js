@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './Components/css/styles.css';
+import './Components/Js/header/headerScroll.css';
 import App from './Components/pages/App/App';
 import HeaderScroll from './Components/Js/header/headerScroll';
 

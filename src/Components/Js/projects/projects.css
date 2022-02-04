@@ -1,0 +1,29 @@
+.card{
+    margin-left:20px;
+    margin-right:20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.card-img-top{
+    padding-top:20px;
+}
+
+div div div a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #7cc5da;
+}
+div div div a:hover{
+    color: #21cbfa;
+}
+div div div a:active{
+    color: #000;
+}
+
+.project2{
+    opacity: 0;
+}
+.project3{
+    opacity: 0;
+}

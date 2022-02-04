@@ -1,0 +1,27 @@
+.activeShowLeft{
+    animation: moveLeft 1s   
+}
+.activeShowRight{
+    animation: moveLeft 1s   
+}
+
+.hide{
+    opacity: 0;
+}
+
+@keyframes moveLeft{
+    from{
+        transform: translateX(calc(100px));
+    }
+    to {
+        transform: translateX(calc(0px));
+    };
+}
+@keyframes moveRight{
+    from{
+        transform: translateX(calc(-100px));
+    }
+    to {
+        transform: translateX(calc(0px));
+    };
+}

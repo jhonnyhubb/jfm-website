@@ -1,6 +1,6 @@
 import React from 'react';
 import Particles from "react-tsparticles";
-import '../../css/header.css';
+import './header.css';
 import particlesOptions from "../../Json/particles.json";
 import {AiFillLinkedin, AiFillGithub} from "react-icons/ai"
 
@@ -21,8 +21,8 @@ function Header() {
                     Student, Developer & musician
                 </p>
                 <div className="icons">
-                    <a href="https://github.com/jhonnyhubb" target="_blank" rel="noreferrer"><AiFillGithub size={50} /></a>
-                    <a href="https://www.linkedin.com/in/jonas-f%C3%A9lix-5794b4220/" target="blank"><AiFillLinkedin size={50} /></a>
+                    <a href="https://github.com/jhonnyhubb" target="_blank" rel="noreferrer"><AiFillGithub size={50} className="text-white"/></a>
+                    <a href="https://www.linkedin.com/in/jonas-f%C3%A9lix-5794b4220/" target="blank"><AiFillLinkedin size={50} className="text-white"/></a>
                 </div>
             </header>
         </div>
