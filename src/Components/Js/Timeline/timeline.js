@@ -11,6 +11,7 @@ import Typography from '@mui/material/Typography';
 import { DiJavascript } from 'react-icons/di';
 
 export default function CustomizedTimeline() {
+  console.log(document.documentElement.scrollTop);
   return (
     <Timeline position="alternate">
       <TimelineItem>
