@@ -7,9 +7,9 @@ const pokedex = require('../../../Img/pokedex.png')
 
 
 //image inside the className card
-export default function CustomizedTimeline({action}) {
+export default function projects({action}) {
     return (
-        <div className="card-group">
+        <div className={action ? 'card-group activeShow' : 'card-group hide'}>
             <div className="card">
             <img className="card-img-top" src={dogKennel} alt="dogKennel"/>
                 <div className="card-body">

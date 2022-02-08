@@ -2,14 +2,16 @@ import React from 'react';
 import './App.css';
 import Header from '../../Js/header/header.jsx';
 import TimelineScroll from '../../Js/scroll/timeline';
-import Projects from '../../Js/projects/projects'
-
-
+import ProjectsScroll from '../../Js/scroll/projects';
+import HeaderScroll from '../../Js/header/headerScroll'
+import '../../Js/header/headerScroll.css';
+import '../../Js/header/header.css';
 
 function App() {
 
     return (        
         <div className="App">
+            <HeaderScroll /> 
             <Header />
             <main>
                 <div id="about-me">
@@ -24,7 +26,7 @@ function App() {
             </div>
             <main className="portfolio">
                 <h2>My projects</h2>
-                    <Projects />
+                    <ProjectsScroll />
                 <h2>Timeline</h2>
                     <TimelineScroll />
             </main> 

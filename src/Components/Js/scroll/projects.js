@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
-import Home from '../Timeline/timeline';
+import Projects from '../projects/projects'
 
-function TimelineScroll() {
+function ProjectsScroll() {
     /* hide to show */
     const[activeShow, setActiveShow] = useState(false)
 
     useEffect(function(){
         function positionScroll(){
-            if(window.scrollY > 1050){
+            if(window.scrollY > 800){
                 setActiveShow(true)
             } else {
                 setActiveShow(false)
@@ -18,9 +18,9 @@ function TimelineScroll() {
     /* hide to show */
     return (
         <div>
-            <Home action={activeShow}/>
+            <Projects action={activeShow}/>
         </div>
     )
 }
 
-export default TimelineScroll;
+export default ProjectsScroll;

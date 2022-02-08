@@ -1,3 +1,7 @@
+.card-group{
+    transition: all 0.5s ease-in-out;
+}
+
 .card{
     margin-left:30px;
     margin-right:30px;
@@ -25,4 +29,11 @@ div div div a:active{
 
 .project3{
     opacity: 0;
+}
+
+.hide{
+    opacity: 0;
+}
+.activeShow{
+    opacity: 1;
 }
